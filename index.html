@@ -71,18 +71,46 @@
       </section>
       <section id="global-variables" class="main-section">
         <header><h1>Global Variables</h1></header>
+        <p>Global variables are in fact properties of the global object. In web pages the global object is <kbd>window</kbd>, so you can set and access global variables using the <kbd>window.variable</kbd> syntax.</p>
+        <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying its name. For example, if a variable called <kbd>phoneNumber</kbd> is declared in a document, you can refer to this variable from an iframe as <kbd>parent.phoneNumber</kbd>.</p>
       </section>
       <section id="constants" class="main-section">
         <header><h1>Constants</h1></header>
+        <p>You can create a read-only called a constant with the <kbd>const</kbd> keyword. The syntax of a constant identifier must obey the same rules as any other variable identifier.</p>
+        <code>const PI = 3.14;</code>
+        <p>A constant cannot change value through assignment or be re-declared while the script is running. It can only have the value it is initialized with.</p>
       </section>
       <section id="data-types" class="main-section">
         <header><h1>Data Types</h1></header>
+        <p>The latest ECMAScript standard defines seven data types:</p>
+        <ul>
+          <li>Six primitive data types:
+            <ul>
+              <li>Booleans; represents true and false.</li>
+              <li>null; a special keyword denoting a null value.</li>
+              <li>undefined; a top level property whose value is undefined.</li>
+              <li>Number; any integer or decimal value.</li>
+              <li>String; values denote characters or words.</li>
+              <li>Symbol; new to ECMAScript 2015. A data type whose instances are unique and immutable</li>
+            </ul>
+          </li>
+          <li>and Object</li>
+        </ul>
+        <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
       </section>
       <section id="if-else-statement" class="main-section">
         <header><h1>if...else statement</h1></header>
+        <p>Use the <kbd>if</kbd> statement to execute a code block if a logical condition is true. Use the optional <kbd>else</kbd> statement to execute a code block if the logical condition is false. An <kbd>if-else</kbd> statementlooks as follows:</p>
+        <code>if (condition) { execute this code; } else { execute this code; }</code>
+        <p><kbd>condition</kbd> can be any expression that evaluates as true or false. If the condition evaluates as true, the first code block will execute; if it evaluates as false, the second code block executes. The code block inside the if statement can be any statement or calculation, including functions and nested if statements.</p>
+        <p>You may also compund the statement with else if to test for multiple conditions:</p>
+        <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2; }</code><br>
+        <code>else if (condition_3) { statement_3; } else { final_statement; }</code>
+        <p>When multiple conditions are being checked, only the first condition to evaluate as true will execute its code</p>
       </section>
       <section id="while-statement" class="main-section">
         <header><h1>while statement</h1></header>
+        <p></p>
       </section>
       <section id="function-declaration" class="main-section">
         <header><h1>Function Declarations</h1></header>
