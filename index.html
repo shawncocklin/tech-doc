@@ -110,13 +110,26 @@
       </section>
       <section id="while-statement" class="main-section">
         <header><h1>while statement</h1></header>
-        <p></p>
+        <p>A <kbd>while</kbd> statement executes for as long as a specified condition evaluates as true. This is also known as a <em>while loop</em>. A <kbd>while</kbd> statement looks as follows:</p>
+        <code>while (condition) { statement; }</code>
+        <p>If the condition becomes false, the statement within the loop stops executing and the script continues to the next statement.</p>
       </section>
       <section id="function-declaration" class="main-section">
         <header><h1>Function Declarations</h1></header>
+        <p>A <em>function declaration</em> consists of the <kbd>function</kbd> keyword, followed by the following:</p>
+        <ul>
+          <li>the name of the function</li>
+          <li>a list of arguments to the function (also called <em>parameters</em>), enclosed in parenthesis and with each argument separated by a comma</li>
+          <li>the JavaScript statements that define the function, enclosed in curly brackets {}</li>
+        </ul>
+        <p>For example, the following code defines a simple function named <em>square</em>:</p>
+        <code>function square(number) { return number * number; }</code>
+        <p>This function takes one argument, called <kbd>number</kbd>. The function consists of one statement that says to return the value of the argument (number) multiplied by itself.</p>
+        <p>Primitive parameters are passed to functions by value; the value is passed into the function's statement. The value of the parameter can be changed without changing any variables locally or globally, making functions highly flexible and reusable.</p>
       </section>
       <section id="reference" class="main-section">
         <header><h1>Reference</h1></header>
+        <p>All the documentation on this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></p>
       </section>
     </main>
   </body>
