@@ -5,18 +5,66 @@ body {
 /*Layout Properties*/
 
 #container {
+  /*This whole set of properties creates a 1 column grid the size of the viewport*/
+  /*This contrains the child grid container to the viewport, allowing the chid grid items*/
+  /*to overflow, and set the overflow to hidden so that they can scroll their content*/
   display: grid;
   grid-template-columns: 1fr;
-  height: 100vh;
+  height: 100vh;      /*Sets the container to take up 100% of the viewport's height*/
 }
 
 .grid-control {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 30px;
   overflow: hidden;
 }
 
 #main-doc {
   overflow-y: scroll;
 }
+#nav-bar {
+  overflow-y: scroll;
+}
+
+/*Nav Styling*/
+#nav-bar li {
+  list-style: none;
+  border-top: 1px solid black;
+  padding: 20px 5px 20px 5px;
+}
+
+#nav-bar {
+  width: 25vw;
+}
+
+#nav-bar header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 25vw;
+  text-align: center;
+}
+#nav-bar ul {
+  margin-top: 80px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+/*Code Snippet Styling*/
+.code {
+  background-color: #f7f7f7;
+  width: 95%;
+  padding: 15px;
+}
+
+/*Content Styling*/
+#main-doc {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
